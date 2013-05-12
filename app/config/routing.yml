@@ -1,0 +1,6 @@
+ClubUserBundle:
+    resource: "@ClubUserBundle/Controller/"
+    type: annotation
+
+login_check:
+    pattern:   /login_check
