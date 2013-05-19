@@ -380,26 +380,6 @@ class User implements AdvancedUserInterface, EquatableInterface
         return $this->updated_at;
     }
 
-    /**
-     * Set profile
-     *
-     * @param Club\UserBundle\Entity\Profile $profile
-     */
-    public function setProfile(\Club\UserBundle\Entity\Profile $profile)
-    {
-        $this->profile = $profile;
-    }
-
-    /**
-     * Get profile
-     *
-     * @return Club\UserBundle\Entity\Profile $profile
-     */
-    public function getProfile()
-    {
-        return $this->profile;
-    }
-
     public function getSubscriptions()
     {
       return $this->subscriptions;
