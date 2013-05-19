@@ -1,6 +1,6 @@
 <?php
 
-namespace Club\UserBundle\Entity;
+namespace Club\LogBundle\Entity;
 
 use Doctrine\ORM\EntityRepository;
 

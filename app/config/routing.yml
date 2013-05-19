@@ -1,3 +1,8 @@
+club_log:
+    resource: "@ClubLogBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
 ClubUserBundle:
     resource: "@ClubUserBundle/Controller/"
     type: annotation

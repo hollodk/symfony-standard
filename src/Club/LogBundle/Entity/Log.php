@@ -1,12 +1,12 @@
 <?php
 
-namespace Club\UserBundle\Entity;
+namespace Club\LogBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
 
 /**
- * @ORM\Entity(repositoryClass="Club\UserBundle\Entity\LogRepository")
+ * @ORM\Entity(repositoryClass="Club\LogBundle\Entity\LogRepository")
  * @ORM\Table(name="club_log_log")
  * @ORM\HasLifecycleCallbacks()
  */
