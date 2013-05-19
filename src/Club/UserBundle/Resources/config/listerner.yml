@@ -1,0 +1,6 @@
+services:
+  club.log.booking:
+    class: Club\UserBundle\Listener\Booking
+    arguments: [@doctrine.orm.default_entity_manager,@security.context]
+    tags:
+      - { name: kernel.event_listener, event: booking.confirm, method: onBookingConfirm }
