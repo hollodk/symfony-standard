@@ -15,7 +15,7 @@ class Booking
 
     public function onBookingConfirm(\Symfony\Component\EventDispatcher\Event $event)
     {
-        $log = new \Club\UserBundle\Entity\Log();
+        $log = new \Club\LogBundle\Entity\Log();
         $log->setEvent('onBookingConfirm');
         $log->setSeverity('informational');
         $log->setLogType('booking');
