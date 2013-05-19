@@ -4,5 +4,5 @@ namespace Club\UserBundle\Event;
 
 final class Events
 {
-	const onBookingConfirm = 'booking.confirm';
+    const onBookingConfirm = 'booking.confirm';
 }

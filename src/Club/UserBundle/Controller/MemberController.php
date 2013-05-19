@@ -18,6 +18,10 @@ class MemberController extends Controller
 
       $this->getUser()->setApiHash('meh'.rand('1234','12345'));
       $em->persist($this->getUser());
+
+      $event = new \Symfony\Component\EventDispatcher\Event();
+      $this->get('event_dispatcher')->dispatch('booking.confirm', $event);
+
       $em->flush();
 
       return array();
